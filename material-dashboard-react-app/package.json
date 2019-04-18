@@ -1,0 +1,65 @@
+{
+  "name": "material-dashboard-react",
+  "version": "1.6.0",
+  "description": "Material Dashboard React. Coded by Creative Tim",
+  "private": false,
+  "main": "dist/index.js",
+  "dependencies": {
+    "@material-ui/core": "3.9.2",
+    "@material-ui/icons": "3.0.2",
+    "axios": "^0.18.0",
+    "chartist": "0.10.1",
+    "classnames": "2.2.6",
+    "history": "4.7.2",
+    "perfect-scrollbar": "1.4.0",
+    "prettier": "1.16.4",
+    "prop-types": "15.7.1",
+    "react": "16.8.1",
+    "react-chartist": "0.13.3",
+    "react-dom": "16.8.1",
+    "react-google-maps": "9.4.5",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.5",
+    "react-swipeable-views": "0.13.1",
+    "serve": "11.0.0"
+  },
+  "scripts": {
+    "start": "yarn pm2 start",
+    "start:dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "lint:check": "eslint . --ext=js,jsx;  exit 0",
+    "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
+    "build-package-css": "cp src/assets/css/material-dashboard-react.css dist/material-dashboard-react.css",
+    "build-package": "npm run build-package-css && babel src --out-dir dist",
+    "serve": "serve",
+    "pm2": "pm2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/material-dashboard-react.git"
+  },
+  "keywords": [],
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
+  },
+  "homepage": "/",
+  "optionalDependencies": {
+    "@types/googlemaps": "3.30.16",
+    "@types/markerclustererplus": "2.1.33",
+    "ajv": "6.9.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+
+  }
+}

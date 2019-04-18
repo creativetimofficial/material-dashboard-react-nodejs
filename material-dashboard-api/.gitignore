@@ -1,0 +1,7 @@
+/node_modules
+/material-dashboard-react-app/node_modules
+yarn.lock
+yarn-error.log
+.vscode
+/dist
+package-lock.json
