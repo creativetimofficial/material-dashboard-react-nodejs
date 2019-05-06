@@ -93,6 +93,14 @@ class LoginPage extends React.Component {
     return (
       <div className={classes.container}>
         <GridContainer justify="center">
+          <GridItem xs={12} sm={8}>
+            <h4 className={classes.textCenter} style={{ marginTop: 0 }}>
+              Log in to see how you can speed up your web development with out
+              of the box CRUD for #User Management and more.{" "}
+            </h4>
+          </GridItem>
+        </GridContainer>
+        <GridContainer justify="center">
           <GridItem xs={12} sm={6} md={4}>
             <form onSubmit={this.login}>
               <Card className={classes[this.state.cardAnimaton]}>
@@ -121,6 +129,12 @@ class LoginPage extends React.Component {
                   </div>
                 </CardHeader>
                 <CardBody>
+                  <p
+                    className={`${classes.textCenter} ${classes.checkboxLabel}`}
+                  >
+                    Or Sign in with <strong>admin@material.com</strong> and the
+                    password <strong>secret</strong>{" "}
+                  </p>
                   <CustomInput
                     labelText="Email..."
                     id="email"
