@@ -5,25 +5,26 @@ import axios from "axios";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
+import Icon from "@material-ui/core/Icon";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Icon from "@material-ui/core/Icon";
 
 // @material-ui/icons
-import Face from "@material-ui/icons/Face";
 import Email from "@material-ui/icons/Email";
-// import LockOutline from "@material-ui/icons/LockOutline";
 import Check from "@material-ui/icons/Check";
+import Face from "@material-ui/icons/Face";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
+import CardHeader from "components/Card/CardHeader.jsx";
+import CardFooter from "components/Card/CardFooter.jsx";
 
-import registerPageStyle from "assets/jss/material-dashboard-react/views/registerPageStyle";
+import registerPageStyle from "assets/jss/material-dashboard-react/views/registerPageStyle.jsx";
 
 const { REACT_APP_SERVER_URL } = process.env;
 
@@ -34,25 +35,8 @@ class RegisterPage extends React.Component {
       checked: [],
       errors: {}
     };
-    this.handleToggle = this.handleToggle.bind(this);
-    this.register = this.register.bind(this);
   }
-  handleToggle(value) {
-    const { checked } = this.state;
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
-
-    if (currentIndex === -1) {
-      newChecked.push(value);
-    } else {
-      newChecked.splice(currentIndex, 1);
-    }
-
-    this.setState({
-      checked: newChecked
-    });
-  }
-  async register(e) {
+  register = async e => {
     e.preventDefault();
 
     const { history } = this.props;
@@ -68,9 +52,12 @@ class RegisterPage extends React.Component {
 
     let registerRequest;
     try {
-      registerRequest = await axios.post(`http://${REACT_APP_SERVER_URL}/register`, {
-        ...formValues
-      });
+      registerRequest = await axios.post(
+        `http://${REACT_APP_SERVER_URL}/register`,
+        {
+          ...formValues
+        }
+      );
     } catch ({ response }) {
       registerRequest = response;
     }
@@ -83,100 +70,120 @@ class RegisterPage extends React.Component {
       errors:
         registerRequestData.messages && registerRequestData.messages.errors
     });
-  }
+  };
+  handleToggle = value => {
+    const { checked } = this.state;
+    const currentIndex = checked.indexOf(value);
+    const newChecked = [...checked];
+
+    if (currentIndex === -1) {
+      newChecked.push(value);
+    } else {
+      newChecked.splice(currentIndex, 1);
+    }
+
+    this.setState({
+      checked: newChecked
+    });
+  };
   render() {
     const { classes } = this.props;
     const { errors } = this.state;
     return (
       <div className={classes.container}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={6}>
-            <Card className={classes.cardSignup}>
-              <h2 className={classes.cardTitle}>Register</h2>
-              <CardBody>
-                <div className={classes.center}>
-                  <Button justIcon round color="info">
-                    <i className="fa fa-twitter" />
-                  </Button>
-                  {` `}
-                  <Button justIcon round color="rose">
-                    <i className="fa fa-dribbble" />
-                  </Button>
-                  {` `}
-                  <Button justIcon round color="primary">
-                    <i className="fa fa-facebook-f" />
-                  </Button>
-                  {` `}
-                  <h4 className={classes.socialTitle}>or be classical</h4>
-                </div>
-                <form onSubmit={this.register} className={classes.form}>
+          <GridItem xs={12} sm={6} md={4}>
+            <form onSubmit={this.register}>
+              <Card className={classes[this.state.cardAnimaton]}>
+                <CardHeader
+                  className={`${classes.cardHeader} ${classes.textCenter}`}
+                  color="primary"
+                >
+                  <h4 className={classes.cardTitle}>Register</h4>
+                  <div className={classes.socialLine}>
+                    {[
+                      "fa fa-facebook-square",
+                      "fa fa-twitter",
+                      "fa fa-google-plus"
+                    ].map((prop, key) => {
+                      return (
+                        <Button
+                          color="transparent"
+                          justIcon
+                          key={key}
+                          className={classes.customButtonClass}
+                        >
+                          <i className={prop} />
+                        </Button>
+                      );
+                    })}
+                  </div>
+                </CardHeader>
+                <CardBody>
+                  <p className={classes.cardDescription}>Or Be Classical</p>
                   <CustomInput
+                    labelText="Name..."
+                    id="name"
                     formControlProps={{
                       fullWidth: true,
-                      className: classes.customFormControlClasses
+                      className: classes.formControlClassName
                     }}
-                    error={errors.name}
                     inputProps={{
                       required: true,
                       name: "name",
-                      startAdornment: (
-                        <InputAdornment
-                          position="start"
-                          className={classes.inputAdornment}
-                        >
+                      endAdornment: (
+                        <InputAdornment position="end">
                           <Face className={classes.inputAdornmentIcon} />
                         </InputAdornment>
-                      ),
-                      placeholder: "First Name..."
+                      )
                     }}
                   />
                   <CustomInput
+                    labelText="Email..."
+                    id="email"
                     formControlProps={{
                       fullWidth: true,
-                      className: classes.customFormControlClasses
+                      className: classes.formControlClassName
                     }}
                     error={errors.username}
                     inputProps={{
                       required: true,
                       type: "email",
                       name: "username",
-                      startAdornment: (
-                        <InputAdornment
-                          position="start"
-                          className={classes.inputAdornment}
-                        >
+                      endAdornment: (
+                        <InputAdornment position="end">
                           <Email className={classes.inputAdornmentIcon} />
                         </InputAdornment>
-                      ),
-                      placeholder: "Email..."
+                      )
                     }}
                   />
                   <CustomInput
+                    labelText="Password..."
+                    id="password"
                     formControlProps={{
                       fullWidth: true,
-                      className: classes.customFormControlClasses
+                      className: classes.formControlClassName
                     }}
                     error={errors.password}
                     inputProps={{
                       required: true,
                       name: "password",
                       type: "password",
-                      startAdornment: (
-                        <InputAdornment
-                          position="start"
-                          className={classes.inputAdornment}
-                        >
+                      endAdornment: (
+                        <InputAdornment position="end">
                           <Icon className={classes.inputAdornmentIcon}>
                             lock_outline
                           </Icon>
                         </InputAdornment>
-                      ),
-                      placeholder: "Password..."
+                      )
                     }}
                   />
                   <FormControlLabel
                     classes={{
-                      root: classes.checkboxLabelControl,
+                      root:
+                        classes.checkboxLabelControl +
+                        " " +
+                        classes.checkboxLabelControlClassName,
                       label: classes.checkboxLabel
                     }}
                     control={
@@ -194,19 +201,18 @@ class RegisterPage extends React.Component {
                     }
                     label={
                       <span>
-                        I agree to the <a href="#pablo">terms and conditions</a>
-                        .
+                        I agree with the <a href="#pablo">Privacy Policy</a>.
                       </span>
                     }
                   />
-                  <div className={classes.center}>
-                    <Button type="submit" round color="primary">
-                      Get started
-                    </Button>
-                  </div>
-                </form>
-              </CardBody>
-            </Card>
+                </CardBody>
+                <CardFooter className={classes.justifyContentCenter}>
+                  <Button type="submit" color="primary" simple size="lg" block>
+                    Let's Go
+                  </Button>
+                </CardFooter>
+              </Card>
+            </form>
           </GridItem>
         </GridContainer>
       </div>
