@@ -1,6 +1,13 @@
-/*eslint-disable*/
 import React, { Component } from "react";
 import classnames from "classnames";
+import { NavLink } from "react-router-dom";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon
+} from "react-share";
+import GitHubButton from "react-github-button";
 
 import imagine1 from "assets/img/sidebar-1.jpg";
 import imagine2 from "assets/img/sidebar-2.jpg";
@@ -167,16 +174,42 @@ class FixedPlugin extends Component {
               </div>
             </li>
             <li className="button-container">
-              <Button
-                color="info"
-                fullWidth
-                href="https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial"
-                target="_blank"
-              >
-                Documentation
-              </Button>
+              <NavLink to={"/documentation"} activeClassName="active">
+                <Button color="info" fullWidth>
+                  Documentation
+                </Button>
+              </NavLink>
             </li>
-            <li className="adjustments-line" />
+
+            <li className="header-title" id="sharrreTitle">
+              Thank you for sharing!
+            </li>
+
+            <li className="button-container">
+              <FacebookShareButton url="https://creativetimofficial.github.io/material-dashboard-react">
+                <FacebookIcon size={32} round={true} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url="https://creativetimofficial.github.io/material-dashboard-react"
+                title="Material Dashboard React - Free Bootstrap Admin Template"
+                hashtags={["react", "material-ui"]}
+                via="creativetim"
+              >
+                <TwitterIcon size={32} round={true} />
+              </TwitterShareButton>
+            </li>
+            <li className="button-container">
+              <GitHubButton
+                type="stargazers"
+                namespace="creativetimofficial"
+                repo="material-dashboard-react"
+              />
+              <GitHubButton
+                type="forks"
+                namespace="creativetimofficial"
+                repo="material-dashboard-react"
+              />
+            </li>
           </ul>
         </div>
       </div>
