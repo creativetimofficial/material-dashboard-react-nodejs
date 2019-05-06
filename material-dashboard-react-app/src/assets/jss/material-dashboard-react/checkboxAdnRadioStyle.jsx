@@ -15,7 +15,8 @@ const checkboxAdnRadioStyle = {
     width: "20px",
     height: "20px",
     border: "1px solid rgba(" + hexToRgb(blackColor) + ", .54)",
-    borderRadius: "3px"
+    borderRadius: "3px",
+    boxSizing: "content-box"
   },
   uncheckedIcon: {
     width: "0px",
@@ -31,7 +32,8 @@ const checkboxAdnRadioStyle = {
     width: "20px",
     height: "20px",
     border: "1px solid " + primaryColor[0],
-    borderRadius: "50%"
+    borderRadius: "50%",
+    boxSizing: "content-box"
   },
   radioUnchecked: {
     width: "0px",

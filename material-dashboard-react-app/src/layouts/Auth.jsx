@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 // core components
 import AuthNavbar from "components/Navbars/AuthNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
+import Footer from "components/Footer/AuthFooter.jsx";
 
 import routes from "routes.js";
 
