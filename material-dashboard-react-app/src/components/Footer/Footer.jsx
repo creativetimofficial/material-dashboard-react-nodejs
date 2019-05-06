@@ -38,11 +38,15 @@ function Footer({ ...props }) {
         </div>
         <p className={classes.right}>
           <span>
-            &copy; {1900 + new Date().getYear()}{" "}
+            &copy; {1900 + new Date().getYear()} made with love, by{" "}
             <a href="https://www.creative-tim.com" className={classes.a}>
               Creative Tim
-            </a>
-            , made with love for a better web
+            </a>{" "}
+            and{" "}
+            <a href="https://udevoffice.com/" className={classes.a}>
+              Udevoffice
+            </a>{" "}
+            for a better web
           </span>
         </p>
       </div>
