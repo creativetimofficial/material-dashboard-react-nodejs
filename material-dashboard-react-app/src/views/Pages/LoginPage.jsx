@@ -6,10 +6,12 @@ import axios from "axios";
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
-// import LockOutline from "@material-ui/icons/LockOutline";
+import Check from "@material-ui/icons/Check";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -28,24 +30,12 @@ const { REACT_APP_SERVER_URL } = process.env;
 class LoginPage extends React.Component {
   constructor(props) {
     super(props);
-    // we use this to make the card to appear after the page has been rendered
     this.state = {
-      cardAnimaton: "cardHidden",
+      checked: [],
       errors: {}
     };
-
-    this.login = this.login.bind(this);
   }
-  componentDidMount() {
-    // we add a hidden class to the card and after 700 ms we delete it and the transition appears
-    this.timeOutFunction = setTimeout(
-      function() {
-        this.setState({ cardAnimaton: "" });
-      }.bind(this),
-      700
-    );
-  }
-  async login(e) {
+  login = async e => {
     e.preventDefault();
 
     const { history } = this.props;
@@ -81,23 +71,42 @@ class LoginPage extends React.Component {
     this.setState({
       errors: loginRequestData.messages && loginRequestData.messages.errors
     });
-  }
-  componentWillUnmount() {
-    clearTimeout(this.timeOutFunction);
-    this.timeOutFunction = null;
-  }
+  };
+  handleToggle = value => {
+    const { checked } = this.state;
+    const currentIndex = checked.indexOf(value);
+    const newChecked = [...checked];
+
+    if (currentIndex === -1) {
+      newChecked.push(value);
+    } else {
+      newChecked.splice(currentIndex, 1);
+    }
+
+    this.setState({
+      checked: newChecked
+    });
+  };
   render() {
     const { classes } = this.props;
     const { errors } = this.state;
     return (
       <div className={classes.container}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={6} md={6}>
-            <form onSubmit={this.login} style={{ minWidth: 325 }}>
+          <GridItem xs={12} sm={8}>
+            <h4 className={classes.textCenter} style={{ marginTop: 0 }}>
+              Log in to see how you can speed up your web development with out
+              of the box CRUD for #User Management and more.{" "}
+            </h4>
+          </GridItem>
+        </GridContainer>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={6} md={4}>
+            <form onSubmit={this.login}>
               <Card className={classes[this.state.cardAnimaton]}>
                 <CardHeader
                   className={`${classes.cardHeader} ${classes.textCenter}`}
-                  color="rose"
+                  color="primary"
                 >
                   <h4 className={classes.cardTitle}>Log in</h4>
                   <div className={classes.socialLine}>
@@ -120,13 +129,20 @@ class LoginPage extends React.Component {
                   </div>
                 </CardHeader>
                 <CardBody>
+                  <p
+                    className={`${classes.textCenter} ${classes.checkboxLabel}`}
+                  >
+                    Or Sign in with <strong>admin@material.com</strong> and the
+                    password <strong>secret</strong>{" "}
+                  </p>
                   <CustomInput
                     labelText="Email..."
                     id="email"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
                     error={errors.username || errors.invalidEmailOrPassword}
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.formControlClassName
+                    }}
                     inputProps={{
                       required: true,
                       name: "username",
@@ -142,7 +158,8 @@ class LoginPage extends React.Component {
                     id="password"
                     error={errors.password || errors.invalidEmailOrPassword}
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
+                      className: classes.formControlClassName
                     }}
                     inputProps={{
                       type: "password",
@@ -156,9 +173,31 @@ class LoginPage extends React.Component {
                       )
                     }}
                   />
+                  <FormControlLabel
+                    classes={{
+                      root:
+                        classes.checkboxLabelControl +
+                        " " +
+                        classes.checkboxLabelControlClassName,
+                      label: classes.checkboxLabel
+                    }}
+                    control={
+                      <Checkbox
+                        tabIndex={-1}
+                        onClick={() => this.handleToggle(1)}
+                        checkedIcon={<Check className={classes.checkedIcon} />}
+                        icon={<Check className={classes.uncheckedIcon} />}
+                        classes={{
+                          checked: classes.checked,
+                          root: classes.checkRoot
+                        }}
+                      />
+                    }
+                    label={<span>Remember me</span>}
+                  />
                 </CardBody>
                 <CardFooter className={classes.justifyContentCenter}>
-                  <Button type="submit" color="rose" simple size="lg" block>
+                  <Button type="submit" color="primary" simple size="lg" block>
                     Let's Go
                   </Button>
                 </CardFooter>

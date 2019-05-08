@@ -1,71 +1,93 @@
 import {
-  container,
   cardTitle,
+  whiteColor,
+  grayColor,
   blackColor,
-  hexToRgb,
-  grayColor
+  hexToRgb
 } from "assets/jss/material-dashboard-react.jsx";
 
 import customCheckboxRadioSwitch from "assets/jss/material-dashboard-react/checkboxAdnRadioStyle.jsx";
 
-const registerPageStyle = {
+const registerPageStyle = theme => ({
   ...customCheckboxRadioSwitch,
+  container: {
+    paddingRight: "15px",
+    paddingLeft: "15px",
+    marginRight: "auto",
+    marginLeft: "auto",
+    "@media (min-width: 768px)": {
+      width: "750px"
+    },
+    "@media (min-width: 992px)": {
+      width: "970px"
+    },
+    "@media (min-width: 1200px)": {
+      width: "1170px"
+    },
+    "&:before,&:after": {
+      display: "table",
+      content: '" "'
+    },
+    "&:after": {
+      clear: "both"
+    },
+    zIndex: "4",
+    [theme.breakpoints.down("sm")]: {
+      paddingBottom: "100px"
+    }
+  },
   cardTitle: {
     ...cardTitle,
+    color: whiteColor
+  },
+  textCenter: {
     textAlign: "center"
   },
-  container: {
-    ...container,
-    position: "relative",
-    zIndex: "3"
-    // paddingTop: "23vh"
+  justifyContentCenter: {
+    justifyContent: "center !important"
   },
-  cardSignup: {
-    borderRadius: "6px",
-    boxShadow:
-      "0 16px 24px 2px rgba(" +
-      hexToRgb(blackColor) +
-      ", 0.14), 0 6px 30px 5px rgba(" +
-      hexToRgb(blackColor) +
-      ", 0.12), 0 8px 10px -5px rgba(" +
-      hexToRgb(blackColor) +
-      ", 0.2)",
-    marginBottom: "100px",
-    padding: "40px 0px"
-  },
-  center: {
-    textAlign: "center"
-  },
-  right: {
-    textAlign: "right"
-  },
-  left: {
-    textAlign: "left"
-  },
-  form: {
-    padding: "0 20px",
-    position: "relative"
-  },
-  socialTitle: {
-    fontSize: "18px"
+  customButtonClass: {
+    "&,&:focus,&:hover": {
+      color: whiteColor
+    },
+    marginLeft: "5px",
+    marginRight: "5px"
   },
   inputAdornment: {
-    marginRight: "18px",
-    position: "relative"
+    marginRight: "18px"
   },
   inputAdornmentIcon: {
     color: grayColor[6]
   },
-  customFormControlClasses: {
-    margin: "0 12px"
+  cardHidden: {
+    opacity: "0",
+    transform: "translate3d(0, -60px, 0)"
   },
-  checkboxLabelControl: {
-    margin: "0"
+  cardHeader: {
+    marginBottom: "20px"
+  },
+  cardDescription: {
+    textAlign: "center",
+    color: grayColor[0],
+    marginTop: 0,
+    marginBottom: "1rem"
+  },
+  socialLine: {
+    padding: "0.9375rem 0"
+  },
+  formControlClassName: {
+    margin: "0",
+    paddingBottom: "0",
+    "& + $formControlClassName": {
+      marginTop: "5px"
+    }
+  },
+  checkboxLabelControlClassName: {
+    marginTop: "16px"
   },
   checkboxLabel: {
-    marginLeft: "6px",
     color: "rgba(" + hexToRgb(blackColor) + ", 0.26)"
   }
-};
+});
 
 export default registerPageStyle;
