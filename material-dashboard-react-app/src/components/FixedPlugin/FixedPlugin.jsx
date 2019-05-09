@@ -174,7 +174,7 @@ class FixedPlugin extends Component {
               </div>
             </li>
             <li className="button-container">
-              <NavLink to={"/documentation"} activeClassName="active">
+              <NavLink to={"../documentation"} activeClassName="active">
                 <Button color="info" fullWidth>
                   Documentation
                 </Button>
@@ -186,11 +186,11 @@ class FixedPlugin extends Component {
             </li>
 
             <li className="button-container">
-              <FacebookShareButton url="https://github.com/creativetimofficial/material-dashboard-react-nodejs">
+              <FacebookShareButton url="https://creativetimofficial.github.io/material-dashboard-react">
                 <FacebookIcon size={32} round={true} />
               </FacebookShareButton>
               <TwitterShareButton
-                url="https://github.com/creativetimofficial/material-dashboard-react-nodejs"
+                url="https://creativetimofficial.github.io/material-dashboard-react"
                 title="Material Dashboard React - Free Bootstrap Admin Template"
                 hashtags={["react", "material-ui"]}
                 via="creativetim"
@@ -202,12 +202,12 @@ class FixedPlugin extends Component {
               <GitHubButton
                 type="stargazers"
                 namespace="creativetimofficial"
-                repo="material-dashboard-react"
+                repo="material-dashboard-react-nodejs"
               />
               <GitHubButton
                 type="forks"
                 namespace="creativetimofficial"
-                repo="material-dashboard-react"
+                repo="material-dashboard-react-nodejs"
               />
             </li>
           </ul>
