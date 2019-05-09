@@ -62,8 +62,8 @@ You can find the Github Repo here.
 Quick start options:
 
 - `npm i material-dashboard-react`
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard-react.git`.
-- [Download from Github](https://github.com/creativetimofficial/material-dashboard-react/archive/master.zip).
+- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard-react-nodejs.git`.
+- [Download from Github](https://github.com/creativetimofficial/material-dashboard-react-nodejs/archive/master.zip).
 - [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard-react).
 
 
@@ -188,7 +188,7 @@ At present, we officially aim to support the last two versions of the following 
 - Documentation: https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial
 - License Agreement: https://www.creative-tim.com/license
 - Support: https://www.creative-tim.com/contact-us
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react/issues)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues)
 - [Material Kit React - For Front End Development](https://www.creative-tim.com/product/material-kit-react?ref=github-mdr-free)
 
 ## Reporting Issues
@@ -205,7 +205,7 @@ If you have questions or need help integrating the product please [contact us](h
 ## Licensing
 
 - Copyright 2018 Creative Tim (https://www.creative-tim.com)
-- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react-nodejs/blob/master/LICENSE.md)
 
 ## Useful Links
 

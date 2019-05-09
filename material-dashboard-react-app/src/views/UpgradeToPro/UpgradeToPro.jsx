@@ -89,7 +89,7 @@ function UpgradeToPro(props) {
         <Card>
           <CardHeader color="info">
             <h4 className={classes.cardTitleWhite}>
-              Material Dashboard PRO React
+              Material Dashboard React Nodejs
             </h4>
             <p className={classes.cardCategoryWhite}>
               Are you looking for more components? Please check our Premium
@@ -180,7 +180,7 @@ function UpgradeToPro(props) {
                   <tr>
                     <td />
                     <td className={classes.center}>Free</td>
-                    <td className={classes.center}>Just $59</td>
+                    <td className={classes.center}>coming soon</td>
                   </tr>
                   <tr>
                     <td />
@@ -193,7 +193,8 @@ function UpgradeToPro(props) {
                       <Button
                         round
                         color="danger"
-                        href="https://www.creative-tim.com/product/material-dashboard-pro-react?ref=md-free-react-upgrade-live"
+                        disabled
+                        // href="https://www.creative-tim.com/product/material-dashboard-pro-react?ref=md-free-react-upgrade-live"
                       >
                         Upgrade to Pro
                       </Button>

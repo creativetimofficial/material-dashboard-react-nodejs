@@ -1,12 +1,12 @@
 ## [1.6.0] 2019-02-13
 ### Nice stuff
-- [Added RTL support](https://github.com/creativetimofficial/material-dashboard-react/issues/16)
+- [Added RTL support](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/16)
 ### Bug Fixing
-- [Added new script for npm](https://github.com/creativetimofficial/material-dashboard-react/issues/69)
+- [Added new script for npm](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/69)
 - Changed our buggy routing system, now it should work flawlessly, for more info, please refer to our [live docs here](https://demos.creative-tim.com/material-dashboard-react/#/documentation/routing-system)
-- [https://github.com/creativetimofficial/material-dashboard-react/issues/67](https://github.com/creativetimofficial/material-dashboard-react/issues/67)
-- [https://github.com/creativetimofficial/material-dashboard-react/issues/68](https://github.com/creativetimofficial/material-dashboard-react/issues/68)
-- [https://github.com/creativetimofficial/material-dashboard-react/issues/66](https://github.com/creativetimofficial/material-dashboard-react/issues/66)
+- [https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/67](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/67)
+- [https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/68](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/68)
+- [https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/66](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/66)
 ### Major style changes
 - Almost all styles have been changed due to new components, solved issues or [the prettier command](https://prettier.io/docs/en/install.html)
 ### Major components changes
@@ -80,7 +80,7 @@
 ## [1.4.1] 2018-08-10
 ### Bug Fixing
 - Github solved issues:
-  - `https://github.com/creativetimofficial/material-dashboard-react/issues/58`
+  - `https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/58`
 - Changed the `GridContainer` component
 ### Major style changes
 - `src/assets/jss/material-dashboard-react/components/footerStyle.jsx`
@@ -97,13 +97,13 @@
 - Added resize event listener for window ([see this issue here](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/40#issuecomment-406983150))
 - Added issues template file
 - Github solved issues:
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/49 (dropped `react-popper` in favour of `@material-ui/core/Popper`)
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/47
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/45
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/38
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/37
+  - https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/49 (dropped `react-popper` in favour of `@material-ui/core/Popper`)
+  - https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/47
+  - https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/45
+  - https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/38
+  - https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/37
 - Github enhancement issues:
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/47 (read the [./README.md](./README.md) file)
+  - https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues/47 (read the [./README.md](./README.md) file)
 ### Major style changes
 - Added styles for `svg`'s, **font-awesome** classes and `.material-icons` class inside
   - `src/assets/jss/material-dashboard-react/views/dashboardStyle.jsx`

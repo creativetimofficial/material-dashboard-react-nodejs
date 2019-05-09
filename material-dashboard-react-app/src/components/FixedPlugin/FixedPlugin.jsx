@@ -186,11 +186,11 @@ class FixedPlugin extends Component {
             </li>
 
             <li className="button-container">
-              <FacebookShareButton url="https://creativetimofficial.github.io/material-dashboard-react">
+              <FacebookShareButton url="https://github.com/creativetimofficial/material-dashboard-react-nodejs">
                 <FacebookIcon size={32} round={true} />
               </FacebookShareButton>
               <TwitterShareButton
-                url="https://creativetimofficial.github.io/material-dashboard-react"
+                url="https://github.com/creativetimofficial/material-dashboard-react-nodejs"
                 title="Material Dashboard React - Free Bootstrap Admin Template"
                 hashtags={["react", "material-ui"]}
                 via="creativetim"
