@@ -42,7 +42,7 @@ class HeaderLinks extends React.Component {
       return;
     }
 
-    this.setState({ open: false });
+    this.setState({ open: false, profilePopupOpen: false });
   };
 
   logout = async () => {
@@ -224,6 +224,24 @@ class HeaderLinks extends React.Component {
                           Profile
                         </MenuItem>
                       </NavLink>
+                      <MenuItem
+                        onClick={this.handleClose}
+                        className={classes.dropdownItem}
+                      >
+                        Settings
+                      </MenuItem>
+                      <MenuItem
+                        onClick={this.handleClose}
+                        className={classes.dropdownItem}
+                      >
+                        Activity
+                      </MenuItem>
+                      <MenuItem
+                        onClick={this.handleClose}
+                        className={classes.dropdownItem}
+                      >
+                        Support
+                      </MenuItem>
                       <MenuItem
                         onClick={this.logout}
                         className={classes.dropdownItem}
