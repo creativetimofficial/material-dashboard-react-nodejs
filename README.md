@@ -46,7 +46,7 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Demo
 
-| Dashboard | User Profile | Tables | Maps | Notification |
+| Dashboard | User Profile | Tables | Notification |
 | --- | --- | --- | --- | --- |
 | [![Start page](material-dashboard-react-app/src/assets/github/dashboard.png)](https://www.creative-tim.com/live/material-dashboard-react-nodejs/dashboard) | [![User profile page](material-dashboard-react-app/src/assets/github/user.png)](https://www.creative-tim.com/live/material-dashboard-react-nodejs/user) | [![Tables page ](material-dashboard-react-app/src/assets/github/tables.png)](https://www.creative-tim.com/live/material-dashboard-react-nodejs/table) | [![Notification page](material-dashboard-react-app/src/assets/github/notifications.png)](https://www.creative-tim.com/live/material-dashboard-react-nodejs/notifications)
 
