@@ -38,7 +38,7 @@ We are very excited to share this dashboard with you and we look forward to hear
 ## Versions
 
 [<img src="material-dashboard-react-app/src/assets/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
-[<img src="material-dashboard-react-app/src/assets/github/nodejs-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nodejs-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
 
 | React & Nodejs |
 | --- |
@@ -57,7 +57,6 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 Quick start options:
 
-- `npm i material-dashboard-react`
 - Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard-react-nodejs.git`.
 - [Download from Github](https://github.com/creativetimofficial/material-dashboard-react-nodejs/archive/master.zip).
 - [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard-react-nodejs).
