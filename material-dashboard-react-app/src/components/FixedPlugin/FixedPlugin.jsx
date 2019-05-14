@@ -153,7 +153,7 @@ class FixedPlugin extends Component {
               <div className="button-container">
                 <Button
                   color="success"
-                  href="https://www.creative-tim.com/product/material-dashboard-react"
+                  href="https://www.creative-tim.com/product/material-dashboard-react-nodejs"
                   target="_blank"
                   fullWidth
                 >
@@ -165,7 +165,8 @@ class FixedPlugin extends Component {
               <div className="button-container">
                 <Button
                   color="warning"
-                  href="https://www.creative-tim.com/product/material-dashboard-pro-react"
+                  disabled
+                  // href="https://www.creative-tim.com/product/material-dashboard-pro-react"
                   target="_blank"
                   fullWidth
                 >
@@ -174,7 +175,7 @@ class FixedPlugin extends Component {
               </div>
             </li>
             <li className="button-container">
-              <NavLink to={"/documentation"} activeClassName="active">
+              <NavLink to={"../documentation"} activeClassName="active">
                 <Button color="info" fullWidth>
                   Documentation
                 </Button>
@@ -202,12 +203,12 @@ class FixedPlugin extends Component {
               <GitHubButton
                 type="stargazers"
                 namespace="creativetimofficial"
-                repo="material-dashboard-react"
+                repo="material-dashboard-react-nodejs"
               />
               <GitHubButton
                 type="forks"
                 namespace="creativetimofficial"
-                repo="material-dashboard-react"
+                repo="material-dashboard-react-nodejs"
               />
             </li>
           </ul>

@@ -22,14 +22,14 @@ import image from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/reactlogo.png";
 
 const { REACT_APP_SERVER_URL } = process.env;
+let userInfo = {};
 
-const switchRoutes = userInfo => (
+const switchRoutes = (
   <Switch>
     {routes.map((prop, key) => {
       if (prop.layout === "/admin") {
         return (
           <Route
-            userInfo={userInfo}
             path={prop.layout + prop.path}
             component={props => {
               const Component = prop.component;
@@ -51,8 +51,7 @@ class Dashboard extends React.Component {
       color: "blue",
       hasImage: true,
       fixedClasses: "dropdown show",
-      mobileOpen: false,
-      userInfo: {},
+      mobileOpen: false,      
     };
   }
   handleImageClick = image => {
@@ -100,7 +99,7 @@ class Dashboard extends React.Component {
     }
     const { data: getSessionRequestData } = getSessionRequest;
     if (getSessionRequestData.success) {
-      return this.setState({userInfo: getSessionRequestData.userInfo});
+      return userInfo = getSessionRequestData.userInfo;
     }
     return history.push("/auth/login-page");
   }
@@ -117,7 +116,6 @@ class Dashboard extends React.Component {
   }
   render() {
     const { classes, ...rest } = this.props;
-    const { userInfo } = this.state;
 
     return (
       <div className={classes.wrapper}>
@@ -140,10 +138,10 @@ class Dashboard extends React.Component {
           {/* On the /maps route we want the map to be on full screen - this is not possible if the content and conatiner classes are present because they have some paddings which would make the map smaller */}
           {this.getRoute() ? (
             <div className={classes.content}>
-              <div className={classes.container}>{switchRoutes(userInfo)}</div>
+              <div className={classes.container}>{switchRoutes}</div>
             </div>
           ) : (
-            <div className={classes.map}>{switchRoutes(userInfo)}</div>
+            <div className={classes.map}>{switchRoutes}</div>
           )}
           {this.getRoute() ? <Footer /> : null}
           <FixedPlugin

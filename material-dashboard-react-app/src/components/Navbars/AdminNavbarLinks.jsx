@@ -1,5 +1,7 @@
 import React from "react";
 import classNames from "classnames";
+import { NavLink } from "react-router-dom";
+import axios from "axios";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -20,12 +22,19 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-dashboard-react/components/headerLinksStyle.jsx";
 
+const { REACT_APP_SERVER_URL } = process.env;
+
 class HeaderLinks extends React.Component {
   state = {
-    open: false
+    open: false,
+    profilePopupOpen: false,
   };
   handleToggle = () => {
-    this.setState(state => ({ open: !state.open }));
+    this.setState(state => ({ open: !state.open, profilePopupOpen: false }));
+  };
+
+  handleToggleProfile = () => {
+    this.setState(state => ({ profilePopupOpen: !state.profilePopupOpen, open: false }));
   };
 
   handleClose = event => {
@@ -33,12 +42,30 @@ class HeaderLinks extends React.Component {
       return;
     }
 
-    this.setState({ open: false });
+    this.setState({ open: false, profilePopupOpen: false });
   };
+
+  logout = async () => {
+    const { history } = this.props;
+    let logoutRequest;
+    try {
+      logoutRequest = await axios.post(
+        `http://${REACT_APP_SERVER_URL}/logout`, {}, {
+          withCredentials: true
+        }
+      );
+    } catch ({ request }) {
+      
+      logoutRequest = request;
+    }
+    if (logoutRequest.status === 301) {
+      history.push('/auth/login-page');
+    }
+  }
 
   render() {
     const { classes } = this.props;
-    const { open } = this.state;
+    const { open, profilePopupOpen } = this.state;
     return (
       <div>
         <div className={classes.searchWrapper}>
@@ -150,18 +177,84 @@ class HeaderLinks extends React.Component {
             )}
           </Poppers>
         </div>
-        <Button
-          color={window.innerWidth > 959 ? "transparent" : "white"}
-          justIcon={window.innerWidth > 959}
-          simple={!(window.innerWidth > 959)}
-          aria-label="Person"
-          className={classes.buttonLink}
-        >
-          <Person className={classes.icons} />
-          <Hidden mdUp implementation="css">
-            <p className={classes.linkText}>Profile</p>
-          </Hidden>
-        </Button>
+        <div className={classes.manager}>
+          <Button
+            color={window.innerWidth > 959 ? "transparent" : "white"}
+            justIcon={window.innerWidth > 959}
+            simple={!(window.innerWidth > 959)}
+            aria-label="Person"
+            aria-owns={profilePopupOpen ? "menu-list-grow" : null}
+            aria-haspopup="true"
+            onClick={this.handleToggleProfile}
+            className={classes.buttonLink}
+          >
+            <Person className={classes.icons} />
+            <Hidden mdUp implementation="css">
+              <p className={classes.linkText}>Profile</p>
+            </Hidden>
+          </Button>
+          <Poppers
+            open={profilePopupOpen}
+            anchorEl={this.anchorEl}
+            transition
+            disablePortal
+            className={
+              classNames({ [classes.popperClose]: !profilePopupOpen }) +
+              " " +
+              classes.pooperNav
+            }
+          >
+            {({ TransitionProps, placement }) => (
+              <Grow
+                {...TransitionProps}
+                id="menu-list-grow"
+                style={{
+                  transformOrigin:
+                    placement === "bottom" ? "center top" : "center bottom"
+                }}
+              >
+                <Paper>
+                  <ClickAwayListener onClickAway={this.handleClose}>
+                    <MenuList role="menu">
+                      <NavLink to="/admin/user">
+                        <MenuItem
+                          onClick={this.handleClose}
+                          className={classes.dropdownItem}
+                        >
+                          Profile
+                        </MenuItem>
+                      </NavLink>
+                      <MenuItem
+                        onClick={this.handleClose}
+                        className={classes.dropdownItem}
+                      >
+                        Settings
+                      </MenuItem>
+                      <MenuItem
+                        onClick={this.handleClose}
+                        className={classes.dropdownItem}
+                      >
+                        Activity
+                      </MenuItem>
+                      <MenuItem
+                        onClick={this.handleClose}
+                        className={classes.dropdownItem}
+                      >
+                        Support
+                      </MenuItem>
+                      <MenuItem
+                        onClick={this.logout}
+                        className={classes.dropdownItem}
+                      >
+                        Logout
+                      </MenuItem>
+                    </MenuList>
+                  </ClickAwayListener>
+                </Paper>
+              </Grow>
+            )}
+          </Poppers>
+        </div>
       </div>
     );
   }

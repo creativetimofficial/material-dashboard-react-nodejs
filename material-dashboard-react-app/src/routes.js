@@ -7,6 +7,8 @@ import LocationOn from "@material-ui/icons/LocationOn";
 import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
+import Register from "@material-ui/icons/GroupAdd";
+import Login from "@material-ui/icons/LockOpen";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
@@ -99,7 +101,7 @@ const dashboardRoutes = [
     path: "/login-page",
     name: "Login Page",
     rtlName: "پشتیبانی از راست به چپ",
-    icon: Language,
+    icon: Login,
     component: LoginPage,
     layout: "/auth"
   },
@@ -107,7 +109,7 @@ const dashboardRoutes = [
     path: "/register-page",
     name: "Register Page",
     rtlName: "پشتیبانی از راست به چپ",
-    icon: Language,
+    icon: Register,
     component: RegisterPage,
     layout: "/auth"
   }
