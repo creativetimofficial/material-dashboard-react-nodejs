@@ -1,15 +1,24 @@
-# [Material Dashboard React](https://www.creative-tim.com/live/material-dashboard-react-nodejs/dashboard)
+# [Material Dashboard React](https://www.creative-tim.com/live/material-dashboard-react-nodejs) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.creative-tim.com%2Fmaterial-dashboard-react-nodejs%20%20Material%20Dashboard%20React%20Nodejs%20is%20a%20Free%20Frontend%20Preset%20for%20Nodejs%20%E2%9D%A4%EF%B8%8F&source=webclient)
 
-![Product Gif](material-dashboard-react-app/src/assets/github/md-react.gif)
 
-Start your development with Material Dashboard React Nodejs, a free Material-UI Admin built for Node.js framework, the newest go-to technology for top companies. Creative Tim (https://www.creative-tim.com/) partnered with Udevoffice (https://udevoffice.com/) to provide a fully coded “frontend + backend” solution for you. It features a huge number of components that can help you create amazing websites and brings with itself innumerable advantages: the lightweight, fast, scalable and modern way to execute your next top app. Material Dashboard React Nodejs comes with 30 implemented frontend components, which you can combine and modify to your liking using SASS files. Every element has multiple states for colour, style, hover and focus. Material Dashboard Laravel uses a framework built by our friend Federico - Bootstrap Material Design (http://fezvrasta.github.io/bootstrap-material-design/), who did an amazing job creating the backbone for the material effects, animations, ripples, and transitions. Big thanks to his team for the effort and forward thinking they put into it. The package saves you tons of time. Instead of investing time in doing the frontend-backend integration, you have a boilerplate which does the heavy lifting for you. *COMPLEX DOCUMENTATION* Each element is well presented in very complex documentation. You can check the components [here](#documentation) and the foundation. *Example Pages* If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project. View example pages [here](#demo). 
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react-nodejs.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react-nodejs.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues-react?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+
+Start your development with Material Dashboard React Nodejs, a free Material-UI Admin built for Node.js framework, the newest go-to technology for top companies. Creative Tim (https://www.creative-tim.com/) partnered with Udevoffice (https://udevoffice.com/) to provide a fully coded “frontend + backend” solution for you. It features a huge number of components that can help you create amazing websites and brings with itself innumerable advantages: the lightweight, fast, scalable and modern way to execute your next top app. 
+
+**Material Dashboard React Nodejs** comes with 30 implemented frontend components, which you can combine and modify to your liking using SASS files. Every element has multiple states for colour, style, hover and focus. Material Dashboard Laravel uses a framework built by our friend Federico - Bootstrap Material Design (http://fezvrasta.github.io/bootstrap-material-design/), who did an amazing job creating the backbone for the material effects, animations, ripples, and transitions. Big thanks to his team for the effort and forward thinking they put into it. The package saves you tons of time. Instead of investing time in doing the frontend-backend integration, you have a boilerplate which does the heavy lifting for you. 
+
+**COMPLEX DOCUMENTATION** 
+
+Each element is well presented in very complex documentation. You can check the components [here](#documentation) and the foundation. 
+
+**Example Pages** 
+
+If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project. View example pages [here](#demo). 
 
 Special thanks go to:
 + [React-chartist](https://github.com/fraserxu/react-chartist) for the wonderful charts.
 
 We are very excited to share this dashboard with you and we look forward to hearing your feedback!
-
-You can find the Github Repo here.
 
 ## Table of Contents
 
@@ -28,15 +37,12 @@ You can find the Github Repo here.
 
 ## Versions
 
-[<img src="material-dashboard-react-app/src/assets/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
 [<img src="material-dashboard-react-app/src/assets/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
-[<img src="material-dashboard-react-app/src/assets/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
-[<img src="material-dashboard-react-app/src/assets/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
+[<img src="material-dashboard-react-app/src/assets/github/nodejs-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
 
-
-| HTML | React | Vue | Angular |
-| --- | --- | --- | --- |
-| [![Material Dashboard HTML](material-dashboard-react-app/src/assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard React](material-dashboard-react-app/src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-nodejs) | [![Vue Material Dashboard ](material-dashboard-react-app/src/assets/github/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular](material-dashboard-react-app/src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
+| React & Nodejs |
+| --- |
+| [![Material Dashboard React Nodejs](material-dashboard-react-app/src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-nodejs) 
 
 ## Demo
 
