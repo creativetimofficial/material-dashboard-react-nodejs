@@ -43,7 +43,7 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 | React & Nodejs |
 | --- |
-| [![Material Dashboard React Nodejs](material-dashboard-react-app/src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-nodejs) 
+| [![Material Dashboard React Nodejs](https://s3.amazonaws.com/creativetim_bucket/products/157/original/opt_mdr_node_thumbnail.jpg?1557907252)](https://www.creative-tim.com/product/material-dashboard-react-nodejs) 
 
 ## Demo
 
