@@ -10,11 +10,11 @@ Start your development with Material Dashboard React Nodejs, a free Material-UI 
 
 **COMPLEX DOCUMENTATION** 
 
-Each element is well presented in very complex documentation. You can check the components [here](https://www.creative-tim.com/live/material-dashboard-react-nodejs/documentation/buttons) and the foundation. 
+Each element is well presented in very complex documentation. You can check the components [here](https://www.creative-tim.com/live/material-dashboard-react-nodejs/?start-page=documentation/buttons) and the foundation. 
 
 **Example Pages** 
 
-If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project. View example pages [here](https://www.creative-tim.com/live/material-dashboard-react-nodejs/admin/dashboard). 
+If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project. View example pages [here](https://www.creative-tim.com/live/material-dashboard-react-nodejs/). 
 
 Special thanks go to:
 + [React-chartist](https://github.com/fraserxu/react-chartist) for the wonderful charts.
