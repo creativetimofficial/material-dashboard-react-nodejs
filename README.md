@@ -64,7 +64,7 @@ Quick start options:
 
 
 ## Documentation
-The documentation for the Material Dashboard React Nodejs is hosted at our [website](https://www.creative-tim.com/live/material-dashboard-react-nodejs/documentation/tutorial).
+The documentation for the Material Dashboard React Nodejs is hosted at our [website](https://www.creative-tim.com/live/material-dashboard-react-nodejs/?start-page=documentation/buttons).
 
 
 ## File Structure
