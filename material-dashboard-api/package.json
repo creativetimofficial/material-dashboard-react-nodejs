@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "async-middleware": "^1.2.1",
-    "bcrypt": "^3.0.4",
+    "bcrypt": "^5.0.0",
     "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
     "browser-sync": "^2.26.3",
