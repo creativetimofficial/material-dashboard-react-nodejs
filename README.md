@@ -1,9 +1,9 @@
 # [Material Dashboard 2 React NodeJS API](https://material-dashboard-react-nodejs.creative-tim.com) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=Check%20Material%20Dashboard%20%20PRO%20React%20made%20by%20%40CreativeTim%20and%20%40UPDIVISION%20%23webdesign%20%23dashboard%20%23react%20%23mui&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-dashboard-react-node)
 
-![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react-node/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react-node/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues?q=is%3Aissue+is%3Aclosed)
 
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/products/688/original/react-material-dashboard-nodejs.jpg?1664786816"/>](https://www.creative-tim.com/product/material-dashboard-react-node)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/products/157/original/react-material-dashboard-nodejs.jpg?1664786816"/>](https://www.creative-tim.com/product/material-dashboard-react-node)
 
 **Documentation built by Developers**
 
@@ -19,7 +19,7 @@ View [example pages here](https://material-dashboard-react-nodejs.creative-tim.c
 
 **HELPFUL LINKS**
 
-- View [Github Repository](https://github.com/creativetimofficial/material-dashboard-react-node)
+- View [Github Repository](https://github.com/creativetimofficial/material-dashboard-react-nodejs)
 - Check [FAQ Page](https://www.creative-tim.com/faq)
 
 #### Special thanks
@@ -64,7 +64,7 @@ If you want to get more features, go PRO with [Material Dashboard 2 PRO React No
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Material Dashboard 2 PRO React](https://s3.amazonaws.com/creativetim_bucket/products/80/thumb/material-dashboard-pro-react.jpg)](http://demos.creative-tim.com/material-dashboard-pro-react/#/dashboards/analytics?ref=readme-mdpr) | [![Material Dashboard 2 PRO React TS](https://s3.amazonaws.com/creativetim_bucket/products/594/thumb/material-dashboard-pro-react-typescript.jpg)](http://demos.creative-tim.com/material-dashboard-2-pro-react-ts/#/dashboards/analytics?ref=readme-mdpr) |
 
-| Laravel JSON:API                                                                                                                                                                                                                                                   | NodeJS                                                                                                                                                                                                                                                               |
+| React + Laravel JSON:API                                                                                                                                                                                                                                                   | React + NodeJS                                                                                                                                                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Material Dashboard 2 PRO React Laravel JSON:API](https://s3.amazonaws.com/creativetim_bucket/products/687/thumb/react-material-dashboard-pro-laravel.jpg?1664783851)](https://react-material-dashboard-pro-laravel.creative-tim.com/auth/login?ref=readme-mdpr) | [![Material Dashboard 2 PRO React NodeJS API](https://s3.amazonaws.com/creativetim_bucket/products/689/thumb/react-material-dashboard-pro-nodejs.jpg?1664790326)](https://material-dashboard-pro-react-nodejs.creative-tim.com/dashboards/analytics?ref=readme-mdpr) |
 
@@ -72,11 +72,11 @@ If you want to get more features, go PRO with [Material Dashboard 2 PRO React No
 
 | Register                                                                                                                                       | Login                                                                                                                                    | Dashboard                                                                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [<img src="public/images/register.png" width="322" />](https://react-material-dashboard-laravel.creative-tim.com/auth/register) | [<img src="public/images/login.png" width="322" />](https://react-material-dashboard-laravel.creative-tim.com/auth/login) | [<img src="public/images/dashboard.png" width="322" />](https://react-material-dashboard-laravel.creative-tim.com/dashboard) |
+| [<img src="public/images/register.png" width="322" />](https://material-dashboard-react-nodejs.creative-tim.com/auth/register) | [<img src="public/images/login.png" width="322" />](https://material-dashboard-react-nodejs.creative-tim.com/auth/login) | [<img src="public/images/dashboard.png" width="322" />](https://material-dashboard-react-nodejs.creative-tim.com/dashboard) |
 
 | Forgot Password Page                                                                                                                                         | Reset Password Page                                                                                                                    | Profile Page                                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [<img src="public/images/forgot-password.png" width="320" />](https://react-material-dashboard-laravel.creative-tim.com/auth/forgot-password) | [<img src="public/images/reset-password.png" width="312" />](https://react-material-dashboard-laravel.creative-tim.com) | [<img src="public/images/profile.png" width="330" />](https://react-material-dashboard-laravel.creative-tim.com/user-profile) |
+| [<img src="public/images/forgot-password.png" width="320" />](https://material-dashboard-react-nodejs.creative-tim.com/auth/forgot-password) | [<img src="public/images/reset-password.png" width="312" />](https://material-dashboard-react-nodejs.creative-tim.com) | [<img src="public/images/profile.png" width="330" />](https://material-dashboard-react-nodejs.creative-tim.com/user-profile) |
 
 [View More](https://react-material-dashboard-laravel.creative-tim.com)
 
@@ -697,7 +697,7 @@ At present, we officially aim to support the last two versions of the following 
 - Documentation is [here](https://material-dashboard-react-node-docs.creative-tim.com/react/quick-start/material-dashboard-node/?ref=readme-mdr)
 - [License Agreement](https://www.creative-tim.com/license?ref=readme-mdr)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-mdr)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react-node/issues)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues)
 
 ## Reporting Issues
 
