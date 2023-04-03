@@ -66,7 +66,7 @@ If you want to get more features, go PRO with [Material Dashboard 2 PRO React No
 
 | React                                                                                                                                                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | 
-| [<img src="https://s3.amazonaws.com/creativetim_bucket/products/71/original/material-dashboard-react.jpg?1638950990" width="480" />](https://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdpr) |
+| [<img src="https://s3.amazonaws.com/creativetim_bucket/products/71/original/material-dashboard-react.jpg?1638950990" width="400" />](https://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdpr) |
 
 ## Demo
 
