@@ -1,6 +1,8 @@
 # Change Log
 
-## Version 1
+All notable changes to `React Material Dashboard NodeJs`  will be documented in this file.
+
+## Version 1.0.0
 
 - Authentication: login, logout, forget passwors and reset password
 - Profile update
