@@ -92,9 +92,7 @@ For your local development you need to have `Node.js` and `npm` version 16 or ab
 ## ExpressJS API Backend Installation
 
 To install the project you need to have version 16 of Node.js and npm version 8. The first step is to run `npm install` command. Next you need to copy the `.env.example` file and name it `.env`. There are the variables for the database and the URLs:
-- DB_USER=the-mongo-user-name
-- DB_PASSWORD=mongo-password
-- DB_NAME=name-of-the-db
+- DB_LINK="mongodb-link-to-connect"
 
 - JWT_SECRET="token"
 
