@@ -34,9 +34,7 @@ For your local development you need to have `Node.js` and `npm` version 16 or ab
 ## Project Installation
 
 To install the project you need to have version 16 of Node.js and npm version 8. The first step is to run `npm install` command. Next you need to copy the `.env.example` file and name it `.env`. There are the variables for the database and the URLs:
-- DB_USER=the-mongo-user-name
-- DB_PASSWORD=mongo-password
-- DB_NAME=name-of-the-db
+- DB_LINK="mongodb-link-to-connect"
 
 - JWT_SECRET="token"
 
@@ -89,7 +87,7 @@ The documentation for the Node API is hosted at our [here](https://documenter.ge
 ## Dashboards built with Node API
 | Material Dashboard 2 React|
 | --- |
-| [![Material Dashboard 2 React Node JS](https://s3.amazonaws.com/creativetim_bucket/products/689/original/react-material-dashboard-pro-nodejs.jpg?1664790326)](https://material-dashboard-react-nodejs.creative-tim.com/auth/login?ref=hceja-readme) 
+| [![Material Dashboard 2 React Node JS](https://s3.amazonaws.com/creativetim_bucket/products/689/original/react-material-dashboard-pro-nodejs.jpg?1664790326)](https://material-dashboard-react-node.creative-tim.com/auth/login?ref=hceja-readme)
 
 
 ## Reporting Issues
