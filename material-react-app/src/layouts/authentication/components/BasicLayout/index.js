@@ -33,7 +33,6 @@ import { useLocation } from "react-router-dom";
 
 function BasicLayout({ image, children }) {
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <PageLayout>
       <DefaultNavbar

@@ -25,7 +25,12 @@ export class HttpService {
   delete = async (url) => await this.request(this.getOptionsConfig("delete", url));
 
   getOptionsConfig = (method, url, data) => {
-    return { method, url, data, headers: { 'Content-Type': 'application/vnd.api+json' } };
+    return {
+      method,
+      url,
+      data,
+      headers: { "Content-Type": "application/vnd.api+json", "Accept": "application/vnd.api+json", 'Access-Control-Allow-Credentials': true },
+    };
   };
 
   request(options) {
