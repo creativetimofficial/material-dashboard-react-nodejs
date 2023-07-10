@@ -4,7 +4,7 @@ import {
   loginRouteHandler,
   registerRouteHandler,
   resetPasswordRouteHandler,
-} from "../../services/auth";
+} from "../../services/auth/index.js";
 
 const router = express.Router();
 

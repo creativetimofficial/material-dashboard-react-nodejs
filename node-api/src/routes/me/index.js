@@ -3,7 +3,7 @@ import passport from "passport";
 import jwt from 'jsonwebtoken';
 
 const router = express.Router();
-import { getProfileRouteHandler, patchProfileRouteHandler } from "../../services/me";
+import { getProfileRouteHandler, patchProfileRouteHandler } from "../../services/me/index.js";
 
 // get user's profile
 router.get("/", passport.authenticate('jwt',{session: false}), (req, res) => {

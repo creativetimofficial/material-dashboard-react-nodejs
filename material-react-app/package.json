@@ -20,7 +20,6 @@
     "react-chartjs-2": "3.0.4",
     "react-dom": "^17.0.2",
     "react-github-btn": "1.2.1",
-    "react-meta-tags": "^1.0.1",
     "react-router-dom": "6.2.1",
     "react-scripts": "5.0.0",
     "react-table": "7.7.0",
@@ -66,5 +65,5 @@
     "prettier": "2.5.1"
   },
   "homepage": "https://material-dashboard-react-nodejs.creative-tim.com/",
-  "proxy": "https://node-json-api-free.creative-tim.com/"
+  "proxy": "http://localhost:8080"
 }

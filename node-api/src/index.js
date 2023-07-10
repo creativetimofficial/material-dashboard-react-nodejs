@@ -3,12 +3,12 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import "./passport.js";
-import { dbConnect } from "./mongo";
-import { meRoutes, authRoutes } from "./routes";
+import { dbConnect } from "./mongo/index.js";
+import { meRoutes, authRoutes } from "./routes/index.js";
 import path from "path";
 import * as fs from "fs";
 import cron from "node-cron";
-import ReseedAction from "./mongo/ReseedAction";
+import ReseedAction from "./mongo/ReseedAction.js";
 
 dotenv.config();
 
