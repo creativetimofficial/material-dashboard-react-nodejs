@@ -329,7 +329,7 @@ function Configurator() {
             </MDBox>
             <MDButton
               component={Link}
-              href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard-react-node"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard-react-nodejs"
               target="_blank"
               rel="noreferrer"
               color="dark"

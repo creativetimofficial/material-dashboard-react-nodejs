@@ -3,7 +3,7 @@
 ![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react-nodejs/issues?q=is%3Aissue+is%3Aclosed)
 
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/products/157/original/react-material-dashboard-nodejs.jpg?1664786816"/>](https://www.creative-tim.com/product/material-dashboard-react-node)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/products/157/original/react-material-dashboard-nodejs.jpg?1664786816"/>](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
 
 **Documentation built by Developers**
 
@@ -691,7 +691,7 @@ At present, we officially aim to support the last two versions of the following 
 ## Resources
 
 - [Live Preview](https://github.com/teamupdivision/material-dashboard-react-node-free?ref=readme-mdr)
-- [Download Page]https://www.creative-tim.com/product/material-dashboard-react-node?ref=readme-mdr)
+- [Download Page]https://www.creative-tim.com/product/material-dashboard-react-nodejs?ref=readme-mdr)
 - Documentation is [here](https://material-dashboard-react-node-docs.creative-tim.com/react/quick-start/material-dashboard-node/?ref=readme-mdr)
 - [License Agreement](https://www.creative-tim.com/license?ref=readme-mdr)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-mdr)
@@ -701,7 +701,7 @@ At present, we officially aim to support the last two versions of the following 
 
 We use GitHub Issues as the official bug tracker for the Material Dashboard React. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-dashboard-react-node?ref=readme-mdr).
+1. Make sure that you are using the latest version of the Material Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-dashboard-react-nodejs?ref=readme-mdr).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
