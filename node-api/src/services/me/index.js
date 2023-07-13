@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import dotenv from 'dotenv';
-import { userModel } from "../../schemas/user.schema";
+import { userModel } from "../../schemas/user.schema.js";
 import jwt from 'jsonwebtoken';
 
 dotenv.config();

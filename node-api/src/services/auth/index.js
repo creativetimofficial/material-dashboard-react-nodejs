@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import nodemailer from "nodemailer";
 import randomToken from "random-token";
 import bcrypt from "bcrypt";
-import { userModel } from "../../schemas/user.schema";
+import { userModel } from "../../schemas/user.schema.js";
 import jwt from 'jsonwebtoken';
 
 dotenv.config();
