@@ -19,7 +19,8 @@ import { useMemo } from "react";
 import PropTypes from "prop-types";
 
 // react-chartjs-2 components
-import { Line } from "react-chartjs-2";
+import "chart.js/auto";
+import { Chart } from "react-chartjs-2";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -80,7 +81,7 @@ function ProgressLineChart({ color, icon, title, count, progress, height, chart 
       {useMemo(
         () => (
           <MDBox mt={2}>
-            <Line data={data} options={options} style={{ height }} />
+            <Chart type="line" data={data} options={options} style={{ height }} />
           </MDBox>
         ),
         [chart, height]

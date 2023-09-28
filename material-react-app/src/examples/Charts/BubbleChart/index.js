@@ -19,7 +19,8 @@ import { useMemo } from "react";
 import PropTypes from "prop-types";
 
 // react-chartjs-2 components
-import { Bubble } from "react-chartjs-2";
+import "chart.js/auto";
+import { Chart } from "react-chartjs-2";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -89,7 +90,7 @@ function BubbleChart({ icon, title, description, height, chart }) {
       {useMemo(
         () => (
           <MDBox height={height}>
-            <Bubble data={data} options={options} />
+            <Chart type="bubble" data={data} options={options} />
           </MDBox>
         ),
         [chart, height]

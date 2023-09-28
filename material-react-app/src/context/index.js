@@ -54,11 +54,7 @@ const AuthContextProvider = ({ children }) => {
     if (!token) return;
 
     setIsAuthenticated(isAuthenticated);
-    if (location.pathname === "/auth/login" || location.pathname === "/auth/register") {
-      navigate("/dashboard");
-    } else {
-      navigate(location.pathname);
-    }
+    navigate(location.pathname);
   }, [isAuthenticated]);
 
   const login = (token) => {

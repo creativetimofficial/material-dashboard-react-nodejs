@@ -19,7 +19,8 @@ import { useMemo } from "react";
 import PropTypes from "prop-types";
 
 // react-chartjs-2 components
-import { PolarArea } from "react-chartjs-2";
+import "chart.js/auto";
+import { Chart } from "react-chartjs-2";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -70,7 +71,7 @@ function PolarChart({ icon, title, description, chart }) {
       {useMemo(
         () => (
           <MDBox p={4}>
-            <PolarArea data={data} options={options} />
+            <Chart type="polarArea" data={data} options={options} />
           </MDBox>
         ),
         [chart]

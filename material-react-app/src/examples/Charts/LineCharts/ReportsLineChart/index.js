@@ -19,7 +19,8 @@ import { useMemo } from "react";
 import PropTypes from "prop-types";
 
 // react-chartjs-2 components
-import { Line } from "react-chartjs-2";
+import "chart.js/auto";
+import { Chart } from "react-chartjs-2";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -51,7 +52,7 @@ function ReportsLineChart({ color, title, description, date, chart }) {
               mt={-5}
               height="12.5rem"
             >
-              <Line data={data} options={options} />
+              <Chart type="line" data={data} options={options} />
             </MDBox>
           ),
           [chart, color]

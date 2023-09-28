@@ -47,7 +47,7 @@ import Register from "auth/register";
 import { AuthContext } from "context";
 import UserProfile from "layouts/user-profile";
 import UserManagement from "layouts/user-management";
-import MetaTags from 'react-meta-tags'
+import { Helmet } from "react-helmet";
 
 export default function App() {
   const authContext = useContext(AuthContext);
@@ -170,7 +170,7 @@ export default function App() {
   return (
     <>
       {isDemo && (
-        <MetaTags>
+        <Helmet>
           <meta
             name="keywords"
             content="creative tim, updivision, material, node.js json:api, html dashboard, node.js, react, api admin, react node.js, html css dashboard node.js, material dashboard node.js, node.js api, react material dashboard, material admin, react dashboard, react admin, web dashboard, bootstrap 5 dashboard node.js, bootstrap 5, css3 dashboard, bootstrap 5 admin node.js, material dashboard bootstrap 5 node.js, frontend, api dashboard, responsive bootstrap 5 dashboard, api, material dashboard, material node.js bootstrap 5 dashboard, json:api"
@@ -225,7 +225,7 @@ export default function App() {
             content="A free full stack app powered by MUI component library, React and Node.js API, featuring dozens of handcrafted UI elements"
           />
           <meta property="og:site_name" content="Creative Tim" />
-        </MetaTags>
+        </Helmet>
       )}
       {direction === "rtl" ? (
         <CacheProvider value={rtlCache}>

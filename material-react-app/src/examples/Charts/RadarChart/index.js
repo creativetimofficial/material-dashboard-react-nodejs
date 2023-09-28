@@ -19,7 +19,8 @@ import { useMemo } from "react";
 import PropTypes from "prop-types";
 
 // react-chartjs-2 components
-import { Radar } from "react-chartjs-2";
+import "chart.js/auto";
+import { Chart } from "react-chartjs-2";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -85,7 +86,7 @@ function RadarChart({ icon, title, description, chart }) {
       {useMemo(
         () => (
           <MDBox p={6}>
-            <Radar data={data} options={options} />
+            <Chart type="radar" data={data} options={options} />
           </MDBox>
         ),
         [chart]
