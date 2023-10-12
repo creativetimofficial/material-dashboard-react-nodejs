@@ -86,8 +86,7 @@ If you want to get more features, go PRO with [Material Dashboard 2 PRO React No
 
 For your local development you need to have `Node.js` and `npm` version 16 or above installed and a registered MongoDB collection:
 - For Windows: https://phoenixnap.com/kb/install-node-js-npm-on-windows
-- For Linux: https://www.geeksforgeeks.org/installation-of-node-js-on-linux/
-- For Mac: https://treehouse.github.io/installation-guides/mac/node-mac.html
+- Linux & Mac: https://updivision.com/blog/post/guide-what-is-lamp-and-how-to-install-it-on-ubuntu-and-macos
 
 ## ExpressJS API Backend Installation
 
