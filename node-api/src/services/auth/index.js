@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 import randomToken from "random-token";
 import bcrypt from "bcrypt";
 import { userModel } from "../../schemas/user.schema";
+import { passwordResetModel } from "../../schemas/passwordResets.schema";
 import jwt from 'jsonwebtoken';
 
 dotenv.config();
@@ -109,6 +110,14 @@ export const forgotPasswordRouteHandler = async (req, res, email) => {
         email: email,
       },
     };
+
+    // save token in db
+    await passwordResetModel.create({
+        email: foundUser.email,
+        token: token,
+        created_at: new Date(),
+    });
+
     return res.status(204).json(dataSent);
   }
 };
@@ -118,10 +127,8 @@ export const resetPasswordRouteHandler = async (req, res) => {
     email: req.body.data.attributes.email,
   });
 
-  if (!foundUser) {
-    return res.status(400).json({
-      errors: { email: ["The email does not match any existing user."] },
-    });
+  if (!foundUser || !foundToken) {
+    return res.status(400).json({errors: { email: ["The email or token does not match any existing user."] }});
   } else {
     const { password, password_confirmation } = req.body.data.attributes;
     // validate password
@@ -142,6 +149,8 @@ export const resetPasswordRouteHandler = async (req, res) => {
     }
     const salt = await bcrypt.genSalt(10);
     const hashPassword = await bcrypt.hash(password, salt);
+
+    await passwordResetModel.deleteOne({ email: foundUser.email });
 
     await userModel.updateOne(
       { email: foundUser.email },
