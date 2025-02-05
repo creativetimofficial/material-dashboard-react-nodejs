@@ -5,6 +5,7 @@ dotenv.config();
 
 export const dbConnect = () => {
   mongoose.connection.once("open", () => console.log("DB connection"));
+  console.log( `mongodb+srv://${process.env.DB_LINK}?retryWrites=true&w=majority`);
   return mongoose.connect(
     `mongodb+srv://${process.env.DB_LINK}?retryWrites=true&w=majority`,
     { keepAlive: true }
